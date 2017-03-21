@@ -23,7 +23,6 @@ if which ruby > /dev/null 2>&1 ; then
     fi
 
     echo "Installing sumologic-notifier..."
-    bundle install
 
     bundle exec $WERCKER_STEP_ROOT/run.rb
   else
