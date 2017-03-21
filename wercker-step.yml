@@ -1,5 +1,5 @@
 name: sumologic-notifier
-version: 0.1.2
+version: 0.1.3
 description: Posts Wercker build/deploy step log to SumoLogic collector
 keywords:
   - notification
