@@ -7,4 +7,4 @@ build:
     - script:
         name: prepare output
         code: rm -rf $WERCKER_ROOT/.git
-    - flywire-playground/sumologic-notifier
+    - flywire-playground/werker-step-to-sumologic
