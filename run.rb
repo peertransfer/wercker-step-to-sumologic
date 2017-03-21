@@ -13,7 +13,11 @@ puts ENV['WERCKER_RUN_URL']
 puts ENV['SUMOLOGIC_COLLECTOR_URL']
 
 token = ENV['WERCKER_TOKEN']
-run_endpoint = ENV['WERCKER_RUN_URL']
+
+run_api_endpoint = 'https://app.wercker.com/api/v3/runs/'
+run_id = ENV['WERCKER_RUN_URL'].split('/').pop()
+run_endpoint = run_api_endpoint+run_id
+
 headers = {"Authorization" => "Bearer #{token}"}
 sumologic_collector_url = ENV['SUMOLOGIC_COLLECTOR_URL']
 
