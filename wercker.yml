@@ -4,5 +4,3 @@ build:
     - script:
         name: prepare output
         code: rm -rf $WERCKER_ROOT/.git
-    - flywire-playground/sumologic-notifier@0.1.0:
-        url: www.google.com
