@@ -1,0 +1,11 @@
+name: sumologic-notifier
+version: 0.1.0
+description: Posts Wercker build/deploy step log to SumoLogic collector
+keywords:
+  - notification
+  - webhook
+  - sumologic
+properties:
+  url:
+    type: string
+    required: true
