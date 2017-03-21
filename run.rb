@@ -8,6 +8,10 @@
 require 'httparty'
 require 'json'
 
+puts ENV['WERCKER_TOKEN']
+puts ENV['WERCKER_RUN_URL']
+puts ENV['SUMOLOGIC_COLLECTOR_URL']
+
 token = ENV['WERCKER_TOKEN']
 run_endpoint = ENV['WERCKER_RUN_URL']
 headers = {"Authorization" => "Bearer #{token}"}
